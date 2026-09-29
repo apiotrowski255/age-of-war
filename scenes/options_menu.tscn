@@ -21,6 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+auto_translate_mode = 1
 script = ExtResource("1_jf4ox")
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("2_0hats")]
@@ -33,7 +34,7 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -241.0
-offset_top = -476.0
+offset_top = -540.0
 offset_right = 241.0
 offset_bottom = -147.0
 grow_horizontal = 2
@@ -118,6 +119,21 @@ offset_bottom = 34.0
 mouse_default_cursor_shape = 2
 theme = ExtResource("5_3637b")
 
+[node name="LanguageLabel" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+text = "Language"
+label_settings = ExtResource("4_0any7")
+horizontal_alignment = 1
+
+[node name="LanguageOption" type="OptionButton" parent="Panel/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+alignment = 1
+
 [node name="Spacer2" type="Control" parent="Panel/VBoxContainer"]
 custom_minimum_size = Vector2(0, 16)
 layout_mode = 2
@@ -132,4 +148,5 @@ dark = true
 [connection signal="value_changed" from="Panel/VBoxContainer/MusicSlider" to="." method="_on_slider_value_changed" binds= ["Music"]]
 [connection signal="value_changed" from="Panel/VBoxContainer/SFXSlider" to="." method="_on_slider_value_changed" binds= ["sfx"]]
 [connection signal="toggled" from="Panel/VBoxContainer/Label5/FullscreenSwitch" to="." method="_on_fullscreen_toggled"]
+[connection signal="item_selected" from="Panel/VBoxContainer/LanguageOption" to="." method="_on_language_selected"]
 [connection signal="pressed" from="Panel/VBoxContainer/BtnReturn" to="." method="_on_button_pressed"]

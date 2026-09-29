@@ -80,41 +80,41 @@ func _unhandled_key_input(event):
 func get_unit_name(unit_type: String, input_stage):
 	if input_stage == "cave":
 		if unit_type == "melee":
-			return "Club Man"
+			return tr("Club Man")
 		elif unit_type == "range":
-			return "Slingshot Man"
+			return tr("Slingshot Man")
 		elif unit_type == "tank":
-			return "Dino Rider"
+			return tr("Dino Rider")
 	elif input_stage == "knight":
 		if unit_type == "melee":
-			return "Sword Man"
+			return tr("Sword Man")
 		elif unit_type == "range":
-			return "Archer"
+			return tr("Archer")
 		elif unit_type == "tank":
-			return "Knight"
+			return tr("Knight")
 	elif input_stage == "medival":
 		if unit_type == "melee":
-			return "Dueler"
+			return tr("Dueler")
 		elif unit_type == "range":
-			return "Musketeer"
+			return tr("Musketeer")
 		elif unit_type == "tank":
-			return "Cannoneer"
+			return tr("Cannoneer")
 	elif input_stage == "miltary":
 		if unit_type == "melee":
-			return "Melee Infantry"
+			return tr("Melee Infantry")
 		elif unit_type == "range":
-			return "Infantry"
+			return tr("Infantry")
 		elif unit_type == "tank":
-			return "Tank"
+			return tr("Tank")
 	elif input_stage == "future":
 		if unit_type == "melee":
-			return "God's Blade"
+			return tr("God's Blade")
 		elif unit_type == "range":
-			return "Blaster"
+			return tr("Blaster")
 		elif unit_type == "tank":
-			return "War Machine"
+			return tr("War Machine")
 		elif unit_type == "super_soldier":
-			return "super soldier"
+			return tr("super soldier")
 
 func get_unit_cost(unit_type: String, input_stage):
 	if input_stage == stage.cave:
@@ -157,39 +157,39 @@ func get_unit_cost(unit_type: String, input_stage):
 func get_turret_name(query_stage, turret_number: int):
 	if query_stage == stage.cave:
 		if turret_number == 1:
-			return "Rock Slingshot"
+			return tr("Rock Slingshot")
 		elif turret_number == 2:
-			return "Egg Automatic"
+			return tr("Egg Automatic")
 		elif turret_number == 3:
-			return "Primitive Catapult"
+			return tr("Primitive Catapult")
 	elif query_stage == stage.knight:
 		if turret_number == 1:
-			return "Catapult"
+			return tr("Catapult")
 		elif turret_number == 2:
-			return "Fire Catapult"
+			return tr("Fire Catapult")
 		elif turret_number == 3:
-			return "Oil"
+			return tr("Oil")
 	elif query_stage == stage.medival:
 		if turret_number == 1:
-			return "Small Cannon"
+			return tr("Small Cannon")
 		elif turret_number == 2:
-			return "Large Cannon"
+			return tr("Large Cannon")
 		elif turret_number == 3:
-			return "Explosive Cannon"
+			return tr("Explosive Cannon")
 	elif query_stage == stage.miltary:
 		if turret_number == 1:
-			return "Single Turret"
+			return tr("Single Turret")
 		elif turret_number == 2:
-			return "Rocket Launcher"
+			return tr("Rocket Launcher")
 		elif turret_number == 3:
-			return "Double Turret"
+			return tr("Double Turret")
 	elif query_stage == stage.future:
 		if turret_number == 1:
-			return "Titanium Shooter"
+			return tr("Titanium Shooter")
 		elif turret_number == 2:
-			return "Laser Cannon"
+			return tr("Laser Cannon")
 		elif turret_number == 3:
-			return "Ion Cannon"
+			return tr("Ion Cannon")
 
 
 func get_stage_from_string(string: String):

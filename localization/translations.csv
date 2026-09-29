@@ -1,0 +1,146 @@
+keys,en__English,zh_CN__简体中文
+"Play","Play","开始游戏"
+"Instructions","Instructions","游戏说明"
+"Options","Options","设置"
+"Extra","Extra","额外内容"
+"Credits","Credits","制作人员"
+"Exit","Exit","退出"
+"Original game developed by Louissi","Original game developed by Louissi","原版游戏由 Louissi 开发"
+"Remake by Alex Piotrowski in Godot","Remake by Alex Piotrowski in Godot","使用 Godot 重制：Alex Piotrowski"
+"Difficulty:","Difficulty:","难度："
+"Choose a difficulty to start the game:
+","Choose a difficulty to start the game:
+","开始游戏前请选择难度：
+"
+"Normal","Normal","普通"
+"Harder","Harder","困难"
+"Impossible","Impossible","不可能"
+"Click here to return to the menu","Click here to return to the menu","点击此处返回主菜单"
+"The goal of the game is to survive and destroy the enemy base.
+
+The game is divided in 5 ages. To move to the next age, you need
+Xp points. To gain these points, you have to kill enemy units.
+
+You also gain Xp points when one of your units is killed. You can
+also build defences. Finding the balance between defence and
+offence is the key.
+
+You will also be able to use a special attack. This attack will need
+time to be available again after you use it. Each age have its own
+special attack.
+
+You cannot repair your base, but it will gain health points
+everytime you evolve to the next age. Protect your base at all cost!","The goal of the game is to survive and destroy the enemy base.
+
+The game is divided in 5 ages. To move to the next age, you need
+Xp points. To gain these points, you have to kill enemy units.
+
+You also gain Xp points when one of your units is killed. You can
+also build defences. Finding the balance between defence and
+offence is the key.
+
+You will also be able to use a special attack. This attack will need
+time to be available again after you use it. Each age have its own
+special attack.
+
+You cannot repair your base, but it will gain health points
+everytime you evolve to the next age. Protect your base at all cost!","游戏目标是存活下来并摧毁敌方基地。
+
+游戏分为 5 个时代。要进入下一个时代，你需要
+经验值。消灭敌方部队可以获得经验值。
+
+己方部队被消灭时，你也会获得经验值。你还可以
+建造防御设施。攻守平衡是取胜的关键。
+
+你还可以使用特殊攻击。使用后需要等待一段时间才能再次使用。
+每个时代都有自己的特殊攻击。
+
+基地无法维修，但每次进化到下一个时代时都会获得生命值。
+不惜一切代价保护你的基地！"
+"Music volume","Music volume","音乐音量"
+"Sound effect volume","Sound effect volume","音效音量"
+"Fullscreen","Fullscreen","全屏"
+"Language","Language","语言"
+"Oh boy there is a lot of people to give credit too.
+
+Lets start off with the obvious, louissi. Even though there was legal trouble between him and maxgames, to me he will always be the owner of age of war. I wanted this game to be as close to the original, while making some QoL changes.
+
+I would also like to thank my friends and family for always supporting me through rough times and giving me unconditional love.
+I used a lot of tutorials on YouTube to put this together. As way of thanking those creators this game is free and open source. Check it out on Github!
+
+Finally I would like to thank you, the player. Thank you for your time and I hope this was a nice nostalgia trip for you.
+
+- Alex Piotrowski","","制作这款游戏要感谢许多人。
+
+先从最重要的人说起：louissi。虽然他与 maxgames 之间曾有法律纠纷，但在我心中，他永远是《Age of War》的创作者。我希望这款游戏尽可能接近原作，同时加入一些提升体验的改动。
+
+还要感谢我的朋友和家人，在困难时期一直支持我，给予我无条件的爱。
+我参考了 YouTube 上的大量教程完成了这款游戏。为了感谢这些创作者，本游戏免费且开源，欢迎在 Github 上查看！
+
+最后感谢你——玩家。谢谢你愿意花时间游玩，希望这次旅程能带给你美好的怀旧体验。
+
+- Alex Piotrowski"
+"Extras:","Extras:","额外内容："
+"Here is a sweet drawing Louissi made for the knight:","Here is a sweet drawing Louissi made for the knight:","这是 Louissi 为骑士绘制的精美画作："
+"Defeat!","Defeat!","失败！"
+"Maybe you didn't try hard enough?","Maybe you didn't try hard enough?","也许你还不够努力？"
+"Play again?","Play again?","再玩一次？"
+"Victory!","Victory!","胜利！"
+"Congratulations, you won the war and destroyed your ennemy.","Congratulations, you won the war and destroyed your ennemy.","恭喜你赢得战争并摧毁了敌方基地。"
+"Special:","Special:","特殊攻击："
+"Menu","Menu","菜单"
+"Menu - Units","Menu - Units","菜单 - 部队"
+"Menu - Turrets","Menu - Turrets","菜单 - 炮塔"
+"Exp:","Exp:","经验："
+"Training {}...","Training {}...","正在训练……"
+"Training {unit}...","Training {unit}...","正在训练 {unit}……"
+"${price} - {unit}","${price} - {unit}","${price} - {unit}"
+"${price} - {name}","${price} - {name}","${price} - {name}"
+"Waiting for space","Waiting for space","等待出生位置空闲"
+"Not enough XP!","Not enough XP!","经验不足！"
+"Not enough money!","Not enough money!","金钱不足！"
+"Train units menu","Train units menu","部队训练菜单"
+"Return to previous menu","Return to previous menu","返回上一级菜单"
+"Already at Max turret spots","Already at Max turret spots","炮塔位置已达上限"
+"Not enough money to add a new turret spot","Not enough money to add a new turret spot","金钱不足，无法增加炮塔位置"
+"Cannot add any more turret spots","Cannot add any more turret spots","无法再增加炮塔位置"
+"${price} - Add a turret spot","${price} - Add a turret spot","${price} - 增加炮塔位置"
+"Build turrets menu","Build turrets menu","炮塔建造菜单"
+"Sell a turret","Sell a turret","出售炮塔"
+"Already at max age!","Already at max age!","已达到最高时代！"
+"{exp} Xp - Evolve to next age","{exp} Xp - Evolve to next age","{exp} 经验 - 进化到下一个时代"
+"super soldier","super soldier","超级士兵"
+"Game paused
+Press spacebar/escape again to resume","Game paused
+Press spacebar/escape again to resume","游戏已暂停
+再次按空格键或 ESC 键继续"
+"Club Man","Club Man","棍棒兵"
+"Slingshot Man","Slingshot Man","弹弓兵"
+"Dino Rider","Dino Rider","恐龙骑手"
+"Sword Man","Sword Man","剑士"
+"Archer","Archer","弓箭手"
+"Knight","Knight","骑士"
+"Dueler","Dueler","决斗者"
+"Musketeer","Musketeer","火枪手"
+"Cannoneer","Cannoneer","炮手"
+"Melee Infantry","Melee Infantry","近战步兵"
+"Infantry","Infantry","步兵"
+"Tank","Tank","坦克"
+"God's Blade","God's Blade","神之刃"
+"Blaster","Blaster","爆能枪兵"
+"War Machine","War Machine","战争机器"
+"Rock Slingshot","Rock Slingshot","岩石弹弓"
+"Egg Automatic","Egg Automatic","自动投蛋器"
+"Primitive Catapult","Primitive Catapult","原始投石机"
+"Catapult","Catapult","投石机"
+"Fire Catapult","Fire Catapult","火焰投石机"
+"Oil","Oil","燃油炮"
+"Small Cannon","Small Cannon","小型火炮"
+"Large Cannon","Large Cannon","大型火炮"
+"Explosive Cannon","Explosive Cannon","爆炸火炮"
+"Single Turret","Single Turret","单管炮塔"
+"Rocket Launcher","Rocket Launcher","火箭发射器"
+"Double Turret","Double Turret","双管炮塔"
+"Titanium Shooter","Titanium Shooter","钛合金射手"
+"Laser Cannon","Laser Cannon","激光炮"
+"Ion Cannon","Ion Cannon","离子炮"

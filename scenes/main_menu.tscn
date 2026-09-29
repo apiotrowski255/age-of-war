@@ -3073,6 +3073,7 @@ animations = [{
 }]
 
 [node name="main_menu" type="Control"]
+auto_translate_mode = 1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

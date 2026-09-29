@@ -21,6 +21,7 @@ config/icon="res://age of war sprites/effects/logo/main menu0001.png"
 
 MusicManager="*res://globals/music_manager.tscn"
 GlobalVariables="*res://globals/global_variables.gd"
+Localization="*res://localization/localization_manager.gd"
 
 [display]
 
