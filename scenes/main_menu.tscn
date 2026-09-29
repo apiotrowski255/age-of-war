@@ -1,6 +1,6 @@
-[gd_scene load_steps=755 format=3 uid="uid://co2awp7evy8sm"]
+[gd_scene format=3 uid="uid://co2awp7evy8sm"]
 
-[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_bd7un"]
+[ext_resource type="Script" uid="uid://b5fpain3yyrfv" path="res://scenes/main_menu.gd" id="1_bd7un"]
 [ext_resource type="PackedScene" uid="uid://dwx7knn8q5clv" path="res://scenes/menu_parallax_background.tscn" id="2_6vtid"]
 [ext_resource type="Texture2D" uid="uid://cu8pshlufb64c" path="res://age of war sprites/effects/logo/main menu0001.png" id="2_ygwc1"]
 [ext_resource type="Texture2D" uid="uid://nv323dehn560" path="res://age of war sprites/effects/logo/main menu0002.png" id="3_ubj3u"]
@@ -132,7 +132,7 @@
 [ext_resource type="Texture2D" uid="uid://ta5pa4xjwd2i" path="res://age of war sprites/effects/logo/main menu0128.png" id="129_2h7ef"]
 [ext_resource type="Texture2D" uid="uid://dt4l0sl8q4mia" path="res://age of war sprites/effects/logo/main menu0129.png" id="130_14gqc"]
 [ext_resource type="Texture2D" uid="uid://bcj43p40hrhwd" path="res://age of war sprites/effects/logo/main menu0130.png" id="131_j2gqn"]
-[ext_resource type="Script" path="res://scripts/menu_character_switcher.gd" id="133_3dyob"]
+[ext_resource type="Script" uid="uid://2dukc63j1x68" path="res://scripts/menu_character_switcher.gd" id="133_3dyob"]
 [ext_resource type="Texture2D" uid="uid://ugavwip3lugw" path="res://age of war sprites/units/cave/melee/walk/cave_melee_walk0001.png" id="247_s8c40"]
 [ext_resource type="Texture2D" uid="uid://bay7is0wapmjq" path="res://age of war sprites/units/cave/melee/walk/cave_melee_walk0002.png" id="248_wmym7"]
 [ext_resource type="Texture2D" uid="uid://c77dm822etib2" path="res://age of war sprites/units/cave/melee/walk/cave_melee_walk0003.png" id="249_s5264"]
@@ -1138,7 +1138,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("131_j2gqn")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 30.0
 }]
@@ -1275,7 +1275,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("289_lhdmj")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 30.0
 }]
@@ -1412,7 +1412,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("478_w3rod")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 30.0
 }]
@@ -1540,7 +1540,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("704_6g2rx")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 30.0
 }]
@@ -1668,7 +1668,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("940_frmsx")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 30.0
 }]
@@ -1796,7 +1796,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("1216_ve80t")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 30.0
 }]
@@ -1924,7 +1924,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("1528_u8sea")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 30.0
 }]
@@ -2073,7 +2073,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("1852_cmnxe")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 30.0
 }]
@@ -2222,7 +2222,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("2100_pvpb7")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 30.0
 }]
@@ -2374,7 +2374,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("2449_egs1s")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 30.0
 }]
@@ -2529,7 +2529,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("2747_0vvrs")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 30.0
 }]
@@ -2678,7 +2678,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("2999_rr407")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 30.0
 }]
@@ -2716,7 +2716,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3226_orvs1")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 30.0
 }]
@@ -2865,7 +2865,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3433_mv044")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 30.0
 }]
@@ -2975,7 +2975,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3704_g4o8o")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 30.0
 }]
@@ -3067,12 +3067,12 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3915_8xt4v")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 30.0
 }]
 
-[node name="main_menu" type="Control"]
+[node name="main_menu" type="Control" unique_id=368643678]
 auto_translate_mode = 1
 layout_mode = 3
 anchors_preset = 15
@@ -3082,9 +3082,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_bd7un")
 
-[node name="ParallaxBackground" parent="." instance=ExtResource("2_6vtid")]
+[node name="ParallaxBackground" parent="." unique_id=664608679 instance=ExtResource("2_6vtid")]
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Panel" type="Panel" parent="." unique_id=227190197]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -3099,7 +3099,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_0t776")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1493764749]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -3109,47 +3109,47 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 2
 
-[node name="BtnPlay" parent="Panel/VBoxContainer" instance=ExtResource("737_nlns6")]
+[node name="BtnPlay" parent="Panel/VBoxContainer" unique_id=1078359923 instance=ExtResource("737_nlns6")]
 layout_mode = 2
 text = "Play"
 show_hover_pointer = true
 dark = false
 
-[node name="BtnInstructions" parent="Panel/VBoxContainer" instance=ExtResource("737_nlns6")]
+[node name="BtnInstructions" parent="Panel/VBoxContainer" unique_id=592755757 instance=ExtResource("737_nlns6")]
 layout_mode = 2
 text = "Instructions"
 show_hover_pointer = true
 dark = false
 
-[node name="BtnOptions" parent="Panel/VBoxContainer" instance=ExtResource("737_nlns6")]
+[node name="BtnOptions" parent="Panel/VBoxContainer" unique_id=210456155 instance=ExtResource("737_nlns6")]
 layout_mode = 2
 text = "Options"
 show_hover_pointer = true
 dark = false
 
-[node name="BtnExtra" parent="Panel/VBoxContainer" instance=ExtResource("737_nlns6")]
+[node name="BtnExtra" parent="Panel/VBoxContainer" unique_id=60094983 instance=ExtResource("737_nlns6")]
 layout_mode = 2
 text = "Extra"
 show_hover_pointer = true
 dark = false
 
-[node name="BtnCredits" parent="Panel/VBoxContainer" instance=ExtResource("737_nlns6")]
+[node name="BtnCredits" parent="Panel/VBoxContainer" unique_id=1704210199 instance=ExtResource("737_nlns6")]
 layout_mode = 2
 text = "Credits"
 show_hover_pointer = true
 dark = false
 
-[node name="BtnExit" parent="Panel/VBoxContainer" instance=ExtResource("737_nlns6")]
+[node name="BtnExit" parent="Panel/VBoxContainer" unique_id=739017164 instance=ExtResource("737_nlns6")]
 layout_mode = 2
 text = "Exit"
 show_hover_pointer = true
 dark = false
 
-[node name="Spacer" type="Control" parent="Panel/VBoxContainer"]
+[node name="Spacer" type="Control" parent="Panel/VBoxContainer" unique_id=1141844574]
 custom_minimum_size = Vector2(0, 6)
 layout_mode = 2
 
-[node name="BtnOrigCreator" parent="Panel/VBoxContainer" instance=ExtResource("737_nlns6")]
+[node name="BtnOrigCreator" parent="Panel/VBoxContainer" unique_id=1299672519 instance=ExtResource("737_nlns6")]
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 text = "Original game developed by Louissi"
@@ -3157,14 +3157,14 @@ font_size = 16
 show_hover_pointer = true
 dark = false
 
-[node name="BtnRemakeCreator" parent="Panel/VBoxContainer" instance=ExtResource("737_nlns6")]
+[node name="BtnRemakeCreator" parent="Panel/VBoxContainer" unique_id=456540368 instance=ExtResource("737_nlns6")]
 layout_mode = 2
 text = "Remake by Alex Piotrowski in Godot"
 font_size = 16
 show_hover_pointer = true
 dark = false
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1952454306]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -3177,10 +3177,10 @@ grow_vertical = 2
 theme_override_constants/separation = 150
 alignment = 1
 
-[node name="Title" type="Control" parent="VBoxContainer"]
+[node name="Title" type="Control" parent="VBoxContainer" unique_id=717753819]
 layout_mode = 2
 
-[node name="LogoBG" type="AnimatedSprite2D" parent="VBoxContainer/Title"]
+[node name="LogoBG" type="AnimatedSprite2D" parent="VBoxContainer/Title" unique_id=1970083855]
 self_modulate = Color(0, 0, 0, 1)
 position = Vector2(141, 19)
 sprite_frames = SubResource("SpriteFrames_i01kn")
@@ -3188,18 +3188,18 @@ autoplay = "default"
 frame = 74
 frame_progress = 0.325458
 
-[node name="Logo" type="AnimatedSprite2D" parent="VBoxContainer/Title"]
+[node name="Logo" type="AnimatedSprite2D" parent="VBoxContainer/Title" unique_id=1972741807]
 position = Vector2(141, 17)
 sprite_frames = SubResource("SpriteFrames_i01kn")
 autoplay = "default"
 frame = 74
 frame_progress = 0.325458
 
-[node name="Character" type="Control" parent="VBoxContainer"]
+[node name="Character" type="Control" parent="VBoxContainer" unique_id=1680838279]
 layout_mode = 2
 script = ExtResource("133_3dyob")
 
-[node name="cave_melee" type="AnimatedSprite2D" parent="VBoxContainer/Character"]
+[node name="cave_melee" type="AnimatedSprite2D" parent="VBoxContainer/Character" unique_id=1021880428]
 visible = false
 position = Vector2(136, 25)
 scale = Vector2(0.5, 0.5)
@@ -3207,7 +3207,7 @@ sprite_frames = SubResource("SpriteFrames_li306")
 animation = &"walk"
 autoplay = "walk"
 
-[node name="cave_range" type="AnimatedSprite2D" parent="VBoxContainer/Character"]
+[node name="cave_range" type="AnimatedSprite2D" parent="VBoxContainer/Character" unique_id=436126101]
 visible = false
 position = Vector2(128, 26)
 scale = Vector2(0.5, 0.5)
@@ -3215,7 +3215,7 @@ sprite_frames = SubResource("SpriteFrames_1trmf")
 animation = &"walk"
 autoplay = "walk"
 
-[node name="cave_tank" type="AnimatedSprite2D" parent="VBoxContainer/Character"]
+[node name="cave_tank" type="AnimatedSprite2D" parent="VBoxContainer/Character" unique_id=511254785]
 visible = false
 position = Vector2(146, 3)
 scale = Vector2(0.5, 0.5)
@@ -3223,7 +3223,7 @@ sprite_frames = SubResource("SpriteFrames_t0h18")
 animation = &"walk"
 autoplay = "walk"
 
-[node name="knight_melee" type="AnimatedSprite2D" parent="VBoxContainer/Character"]
+[node name="knight_melee" type="AnimatedSprite2D" parent="VBoxContainer/Character" unique_id=674383456]
 visible = false
 position = Vector2(150, 18)
 scale = Vector2(0.5, 0.5)
@@ -3231,7 +3231,7 @@ sprite_frames = SubResource("SpriteFrames_idlmn")
 animation = &"walk"
 autoplay = "walk"
 
-[node name="knight_range" type="AnimatedSprite2D" parent="VBoxContainer/Character"]
+[node name="knight_range" type="AnimatedSprite2D" parent="VBoxContainer/Character" unique_id=258451603]
 visible = false
 position = Vector2(135, 17)
 scale = Vector2(0.5, 0.5)
@@ -3239,14 +3239,14 @@ sprite_frames = SubResource("SpriteFrames_he0ds")
 animation = &"walk"
 autoplay = "walk"
 
-[node name="knight_tank" type="AnimatedSprite2D" parent="VBoxContainer/Character"]
+[node name="knight_tank" type="AnimatedSprite2D" parent="VBoxContainer/Character" unique_id=1670758756]
 position = Vector2(160, -2)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_dwxy8")
 animation = &"walk"
 autoplay = "walk"
 
-[node name="medieval_melee" type="AnimatedSprite2D" parent="VBoxContainer/Character"]
+[node name="medieval_melee" type="AnimatedSprite2D" parent="VBoxContainer/Character" unique_id=1822666]
 visible = false
 position = Vector2(151, 6)
 scale = Vector2(0.5, 0.5)
@@ -3254,7 +3254,7 @@ sprite_frames = SubResource("SpriteFrames_i4sn0")
 animation = &"walk"
 autoplay = "walk"
 
-[node name="medieval_range" type="AnimatedSprite2D" parent="VBoxContainer/Character"]
+[node name="medieval_range" type="AnimatedSprite2D" parent="VBoxContainer/Character" unique_id=1445236849]
 visible = false
 position = Vector2(148, 3)
 scale = Vector2(0.5, 0.5)
@@ -3262,7 +3262,7 @@ sprite_frames = SubResource("SpriteFrames_x7jwa")
 animation = &"walk"
 autoplay = "walk"
 
-[node name="medieval_tank" type="AnimatedSprite2D" parent="VBoxContainer/Character"]
+[node name="medieval_tank" type="AnimatedSprite2D" parent="VBoxContainer/Character" unique_id=36916094]
 visible = false
 position = Vector2(138, 5)
 scale = Vector2(0.5, 0.5)
@@ -3270,7 +3270,7 @@ sprite_frames = SubResource("SpriteFrames_i1gtx")
 animation = &"walk"
 autoplay = "walk"
 
-[node name="military_melee" type="AnimatedSprite2D" parent="VBoxContainer/Character"]
+[node name="military_melee" type="AnimatedSprite2D" parent="VBoxContainer/Character" unique_id=824696958]
 visible = false
 position = Vector2(143, 6)
 scale = Vector2(0.5, 0.5)
@@ -3278,7 +3278,7 @@ sprite_frames = SubResource("SpriteFrames_gmism")
 animation = &"walk"
 autoplay = "walk"
 
-[node name="military_range" type="AnimatedSprite2D" parent="VBoxContainer/Character"]
+[node name="military_range" type="AnimatedSprite2D" parent="VBoxContainer/Character" unique_id=590731736]
 visible = false
 position = Vector2(141, 6)
 scale = Vector2(0.5, 0.5)
@@ -3286,7 +3286,7 @@ sprite_frames = SubResource("SpriteFrames_x71li")
 animation = &"walk"
 autoplay = "walk"
 
-[node name="military_tank" type="AnimatedSprite2D" parent="VBoxContainer/Character"]
+[node name="military_tank" type="AnimatedSprite2D" parent="VBoxContainer/Character" unique_id=1999518253]
 visible = false
 position = Vector2(166, 16)
 scale = Vector2(-0.5, 0.5)
@@ -3294,7 +3294,7 @@ sprite_frames = SubResource("SpriteFrames_va4w8")
 animation = &"walk"
 autoplay = "walk"
 
-[node name="future_melee" type="AnimatedSprite2D" parent="VBoxContainer/Character"]
+[node name="future_melee" type="AnimatedSprite2D" parent="VBoxContainer/Character" unique_id=1525875275]
 visible = false
 position = Vector2(100, -2)
 scale = Vector2(0.5, 0.5)
@@ -3302,7 +3302,7 @@ sprite_frames = SubResource("SpriteFrames_6vksp")
 animation = &"walk"
 autoplay = "walk"
 
-[node name="future_range" type="AnimatedSprite2D" parent="VBoxContainer/Character"]
+[node name="future_range" type="AnimatedSprite2D" parent="VBoxContainer/Character" unique_id=1240173363]
 visible = false
 position = Vector2(129, 6)
 scale = Vector2(0.5, 0.5)
@@ -3310,7 +3310,7 @@ sprite_frames = SubResource("SpriteFrames_odswh")
 animation = &"walk"
 autoplay = "walk"
 
-[node name="future_tank" type="AnimatedSprite2D" parent="VBoxContainer/Character"]
+[node name="future_tank" type="AnimatedSprite2D" parent="VBoxContainer/Character" unique_id=1895444854]
 visible = false
 position = Vector2(134, 13)
 scale = Vector2(0.5, 0.5)

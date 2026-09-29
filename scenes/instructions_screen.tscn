@@ -14,13 +14,13 @@ corner_radius_bottom_right = 32
 corner_radius_bottom_left = 32
 
 [node name="instructions_screen" type="Control"]
-auto_translate_mode = 1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+auto_translate_mode = 1
 script = ExtResource("1_o4ra7")
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("2_6y5u0")]
@@ -69,18 +69,18 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
 text = "The goal of the game is to survive and destroy the enemy base.
 
-The game is divided in 5 ages. To move to the next age, you need 
+The game is divided in 5 ages. To move to the next age, you need
 Xp points. To gain these points, you have to kill enemy units.
 
-You also gain Xp points when one of your units is killed. You can 
-also build defences. Finding the balance between defence and 
+You also gain Xp points when one of your units is killed. You can
+also build defences. Finding the balance between defence and
 offence is the key.
 
-You will also be able to use a special attack. This attack will need 
-time to be available again after you use it. Each age have its own 
+You will also be able to use a special attack. This attack will need
+time to be available again after you use it. Each age have its own
 special attack.
 
-You cannot repair your base, but it will gain health points 
+You cannot repair your base, but it will gain health points
 everytime you evolve to the next age. Protect your base at all cost!"
 label_settings = ExtResource("4_i8nm2")
 
