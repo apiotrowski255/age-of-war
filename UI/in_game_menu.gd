@@ -30,7 +30,7 @@ func _process(delta):
 	if queue.size() != 0 and loading_unit == true and get_node("/root/main_game").unable_to_spawn == false and load_finish == true:
 		_tween_queue_finished(queue[0][0], queue[0][2])
 	if loading_unit == true and load_finish == true:
-		$sublabel_queue.text = "Waiting for space"
+		$sublabel_queue.text = tr("Waiting for space")
 	elif loading_unit == true:
 		$sublabel_queue.show()
 	else:
@@ -63,7 +63,7 @@ func _on_advance_pressed():
 			$units_menu/HBoxContainer/special.disabled = false
 	else:
 		$root_label.show()
-		$root_label.text = "Not enough XP!"
+		$root_label.text = tr("Not enough XP!")
 		
 	
 	
@@ -108,7 +108,7 @@ func load_first_unit_in_queue():
 	tween.tween_property($queue/ColorRect7, "size", Vector2(432, 16), time_to_load)
 	tween.connect("finished", _tween_queue_finished.bind(type, stage))
 	tween.play()
-	$sublabel_queue.text = "Training " + GlobalVariables.get_unit_name(type, stage) + "..."
+	$sublabel_queue.text = tr("Training {unit}...").format({"unit": GlobalVariables.get_unit_name(type, stage)})
 	
 
 func queue_load(time, unit: String):
@@ -140,7 +140,7 @@ func _on_melee_pressed():
 			add_to_queue("melee", 0.5, stage)
 	else:
 		$units_menu/Label.show()
-		$units_menu/Label.text = "Not enough money!"
+		$units_menu/Label.text = tr("Not enough money!")
 
 
 func _on_range_pressed():
@@ -151,7 +151,7 @@ func _on_range_pressed():
 			add_to_queue("range", 1, stage)
 	else:
 		$units_menu/Label.show()
-		$units_menu/Label.text = "Not enough money!"
+		$units_menu/Label.text = tr("Not enough money!")
 
 
 func _on_tank_pressed():
@@ -162,7 +162,7 @@ func _on_tank_pressed():
 			add_to_queue("tank", 2.0, stage)
 	else:
 		$units_menu/Label.show()
-		$units_menu/Label.text = "Not enough money!"
+		$units_menu/Label.text = tr("Not enough money!")
 
 
 func _on_special_button_pressed():
@@ -225,7 +225,7 @@ func update_queue_hud():
 func _on_melee_mouse_entered():
 	# display melee cost and name
 	$units_menu/Label.show()
-	$units_menu/Label.text = "${price} - {unit}".format({"price" : GlobalVariables.get_unit_cost("melee", GlobalVariables.current_stage),
+	$units_menu/Label.text = tr("${price} - {unit}").format({"price" : GlobalVariables.get_unit_cost("melee", GlobalVariables.current_stage),
 														"unit" : GlobalVariables.get_unit_name("melee", GlobalVariables.get_current_age_as_string())})
 
 
@@ -237,13 +237,13 @@ func _on_unit_button_mouse_exited():
 
 func _on_range_mouse_entered():
 	$units_menu/Label.show()
-	$units_menu/Label.text = "${price} - {unit}".format({"price" : GlobalVariables.get_unit_cost("range", GlobalVariables.current_stage),
+	$units_menu/Label.text = tr("${price} - {unit}").format({"price" : GlobalVariables.get_unit_cost("range", GlobalVariables.current_stage),
 														"unit" : GlobalVariables.get_unit_name("range", GlobalVariables.get_current_age_as_string())})
 
 
 func _on_tank_mouse_entered():
 	$units_menu/Label.show()
-	$units_menu/Label.text = "${price} - {unit}".format({"price" : GlobalVariables.get_unit_cost("tank", GlobalVariables.current_stage),
+	$units_menu/Label.text = tr("${price} - {unit}").format({"price" : GlobalVariables.get_unit_cost("tank", GlobalVariables.current_stage),
 														"unit" : GlobalVariables.get_unit_name("tank", GlobalVariables.get_current_age_as_string())})
 
 
@@ -254,7 +254,7 @@ func _on_turret_1_pressed():
 		GlobalVariables.player_money -= GlobalVariables.get_turret_price(GlobalVariables.current_stage, 1)
 	else:
 		$root_label.show()
-		$root_label.text = "Not enough money!"
+		$root_label.text = tr("Not enough money!")
 		return
 	
 	# allow the player to choose where the want to spawn the turret
@@ -291,7 +291,7 @@ func hide_turret_cancel_button_and_show_turret_menu():
 
 func _on_unit_mouse_entered():
 	$root_label.show()
-	$root_label.text = "Train units menu"
+	$root_label.text = tr("Train units menu")
 
 
 func _on_unit_mouse_exited():
@@ -300,7 +300,7 @@ func _on_unit_mouse_exited():
 
 func _on_back_mouse_entered():
 	$units_menu/Label.show()
-	$units_menu/Label.text = "Return to previous menu"
+	$units_menu/Label.text = tr("Return to previous menu")
 
 
 func _on_add_turret_spot_pressed():
@@ -308,11 +308,11 @@ func _on_add_turret_spot_pressed():
 		GlobalVariables.player_money -= get_node("/root/main_game/player_base").get_price_of_new_turret_slot()
 	elif get_node("/root/main_game/player_base").get_price_of_new_turret_slot() == INF:
 		$root_label.show()
-		$root_label.text = "Already at Max turret spots"
+		$root_label.text = tr("Already at Max turret spots")
 		return
 	else:
 		$root_label.show()
-		$root_label.text = "Not enough money to add a new turret spot"
+		$root_label.text = tr("Not enough money to add a new turret spot")
 		return
 	var player_base = get_node("/root/main_game/player_base").add_turret_spot()
 	pass # Replace with function body.
@@ -320,13 +320,13 @@ func _on_add_turret_spot_pressed():
 
 func _on_turret_1_mouse_entered():
 	$root_label.show()
-	$root_label.text = "${price} - {name}".format({"price": GlobalVariables.get_turret_price(GlobalVariables.current_stage, 1),
+	$root_label.text = tr("${price} - {name}").format({"price": GlobalVariables.get_turret_price(GlobalVariables.current_stage, 1),
 													"name": GlobalVariables.get_turret_name(GlobalVariables.current_stage, 1)})
 
 
 func _on_back_mouse_entered_from_turret():
 	$root_label.show()
-	$root_label.text = "Return to previous menu"
+	$root_label.text = tr("Return to previous menu")
 
 
 func _on_back_mouse_exited_from_turret():
@@ -336,21 +336,21 @@ func _on_back_mouse_exited_from_turret():
 
 func _on_turret_mouse_entered():
 	$root_label.show()
-	$root_label.text = "Build turrets menu"
+	$root_label.text = tr("Build turrets menu")
 
 
 func _on_turret_2_mouse_entered():
 	$root_label.show()
-	$root_label.text = "${price} - {name}".format({"price": GlobalVariables.get_turret_price(GlobalVariables.current_stage, 2),
+	$root_label.text = tr("${price} - {name}").format({"price": GlobalVariables.get_turret_price(GlobalVariables.current_stage, 2),
 													"name": GlobalVariables.get_turret_name(GlobalVariables.current_stage, 2)})
 
 
 func _on_add_turret_spot_mouse_entered():
 	$root_label.show()
 	if get_node("/root/main_game/player_base").get_price_of_new_turret_slot() == INF:
-		$root_label.text = "Cannot add any more turret spots"
+		$root_label.text = tr("Cannot add any more turret spots")
 	else:
-		$root_label.text = "${price} - Add a turret spot".format({"price" : get_node("/root/main_game/player_base").get_price_of_new_turret_slot()})
+		$root_label.text = tr("${price} - Add a turret spot").format({"price" : get_node("/root/main_game/player_base").get_price_of_new_turret_slot()})
 
 
 func _on_sell_turret_pressed():
@@ -368,7 +368,7 @@ func _on_turret_2_pressed():
 		GlobalVariables.player_money -= GlobalVariables.get_turret_price(GlobalVariables.current_stage, 2)
 	else:
 		$root_label.show()
-		$root_label.text = "Not enough money!"
+		$root_label.text = tr("Not enough money!")
 		return
 	
 	# allow the player to choose where the want to spawn the turret
@@ -388,15 +388,15 @@ func _on_turret_2_pressed():
 
 func _on_sell_turret_mouse_entered():
 	$root_label.show()
-	$root_label.text = "Sell a turret"
+	$root_label.text = tr("Sell a turret")
 
 
 func _on_advance_mouse_entered():
 	$root_label.show()
 	if GlobalVariables.get_exp_to_next_age() == INF:
-		$root_label.text = "Already at max age!"
+		$root_label.text = tr("Already at max age!")
 	else:
-		$root_label.text = "{exp} Xp - Evolve to next age".format({"exp": GlobalVariables.get_exp_to_next_age()})
+		$root_label.text = tr("{exp} Xp - Evolve to next age").format({"exp": GlobalVariables.get_exp_to_next_age()})
 
 
 func _on_cancel_sell_turret_pressed():
@@ -408,7 +408,7 @@ func _on_cancel_sell_turret_pressed():
 
 func _on_turret_3_mouse_entered():
 	$root_label.show()
-	$root_label.text = "${price} - {name}".format({"price": GlobalVariables.get_turret_price(GlobalVariables.current_stage, 3),
+	$root_label.text = tr("${price} - {name}").format({"price": GlobalVariables.get_turret_price(GlobalVariables.current_stage, 3),
 													"name": GlobalVariables.get_turret_name(GlobalVariables.current_stage, 3)})
 
 
@@ -417,7 +417,7 @@ func _on_turret_3_pressed():
 		GlobalVariables.player_money -= GlobalVariables.get_turret_price(GlobalVariables.current_stage, 3)
 	else:
 		$root_label.show()
-		$root_label.text = "Not enough money!"
+		$root_label.text = tr("Not enough money!")
 		return
 	
 	# allow the player to choose where the want to spawn the turret
@@ -442,15 +442,15 @@ func _on_special_pressed():
 		add_to_queue("super_soldier", 10.0, stage)
 	else:
 		$units_menu/Label.show()
-		$units_menu/Label.text = "Not enough money!"
+		$units_menu/Label.text = tr("Not enough money!")
 
 
 func _on_special_mouse_entered():
 	if GlobalVariables.current_stage != GlobalVariables.stage.future:
 		return
 	$units_menu/Label.show()
-	$units_menu/Label.text = "${price} - {unit}".format({"price" : 150000,
-														"unit" : "super soldier"})
+	$units_menu/Label.text = tr("${price} - {unit}").format({"price" : 150000,
+														"unit" : tr("super soldier")})
 
 
 func _on_special_mouse_exited():

@@ -34,6 +34,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+auto_translate_mode = 1
 script = ExtResource("1_0txj3")
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("2_8ot5c")]
